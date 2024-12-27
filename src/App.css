@@ -1,0 +1,198 @@
+body {
+  background-color: rgb(238, 238, 236);
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.todo-container {
+  background-color: white;
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2), 
+  3px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  color: rgb(85, 76, 76);
+}
+
+form{
+  width: 500px;
+}
+
+input {
+  width: 98.8%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.add {
+  width: 100%;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px 0px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.add:active{
+  background-color: #3498db;
+}
+
+.btns {
+  width: 90%;
+  display: flex;
+}
+
+.btns button {
+  flex-grow: 1;
+  cursor: pointer;
+  border: 1px solid gray;
+  background-color: white;
+  font-size: 15px;
+  padding: 8px;
+  margin: 10px 5px;
+  color: rgb(70, 68, 68);
+}
+
+input:focus{
+    outline: 2px solid black;
+}
+
+.checkbox{
+  outline: none;
+  width: 40px;
+  cursor: pointer;
+  margin: 0px 10px 0px 5px;
+}
+
+.checkbox:focus{
+  outline: none;
+}
+
+li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.tasks{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.p1{
+  width: 90%;
+  color: rgb(85, 76, 76);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.btns1{
+  width: 90%;
+  display: flex;
+}
+
+.btns1 button{
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 17px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.edit{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.delete{
+  background-color: rgb(185, 57, 57);
+  border: none;
+  color: white;
+}
+
+button.active{
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width:598px) {
+  .todo-container{
+    width: 450px;
+    margin: 20px;
+  }
+
+  form{
+    width: 450px;
+  }
+}
+
+
+@media screen and (max-width:554px) {
+  .todo-container{
+    width: 400px;
+    margin: 20px;
+  }
+
+  form{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .todo-container{
+    width: 350px;
+    margin: 20px;
+  }
+
+  form{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .todo-container{
+    width: 300px;
+    margin: 20px;
+  }
+
+  form{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .todo-container{
+    width: 270px;
+    margin: 20px;
+  }
+
+  form{
+    width: 270px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .todo-container{
+    width: auto;
+  }
+
+  form{
+    width: auto;
+  }
+}
